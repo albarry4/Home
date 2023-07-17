@@ -27,11 +27,11 @@ Within the "My Packages" tab, the user will see a list of the packages that they
 
 If no installed backages have an update available, this is what the user will see:
 
-![](../meta/resources/noupdates.png)
+![](../../meta/resources/noupdates.png)
 
 If the user has a package installed with an update available, this is what the user will see: 
 
-![](../meta/resources/updateavailable.png)
+![](../../meta/resources/updateavailable.png)
 
 
 ### Technical explanation
