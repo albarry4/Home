@@ -29,15 +29,21 @@ If no installed backages have an update available, this is what the user will se
 
 
 
+If the user has a package installed with an update available, this is what the user will see: 
+
+[]Mock Here -- in progress
+
+
 ### Technical explanation
 
-<!-- Explain the proposal in sufficient detail with implementation details, interaction models, and clarification of corner cases. -->
+All packages with an update available will have a checkbox next to it, with the option at the top of the screen to select all, and bulk update all packages with an available update, or handle them on a one-at-a-time basis. This behaves similarly to the current functionality of the "Updates" tab
 
 ## Drawbacks
 
-<!-- Why should we not do this? -->
+The current layout with the three tabs provides an inutitive design with a clear, seperate function for each of the tabs (browse packages, view the packages I have installed, update packages). 
 
 ## Rationale and alternatives
+
 
 <!-- Why is this the best design compared to other designs? -->
 <!-- What other designs have been considered and why weren't they chosen? -->
