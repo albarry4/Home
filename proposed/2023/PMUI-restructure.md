@@ -1,9 +1,7 @@
 # NuGet PMUI Tab Consolidation
 
 - Allie Barry @albarry4
-- Start Date (YYYY-MM-DD)
-- GitHub Issue (GitHub Issue link)
-- GitHub PR (GitHub PR link)
+- Start Date 7/27/2023
 
 ## Summary
 
@@ -12,6 +10,8 @@ This proposal suggests a solution to reduce the 3 tab format of the NuGet PMUI i
 ## Motivation 
 
 We have recently recieved feedback from custmers that the NuGet PMUI design is "clunky" and "requires too much clicking over all the tabs, checkboxes... takes too much clicking and surfing to navigate to varius changelogs". Based on this feedback, I wanted to propose an initial solution to specifcially target and reduce the amount of clicking, and to simplify and consolidate the controls within the PMUI by reducting the number of tabs available. Specifically, this proposal aims to consolidate the "Installed" and "Updates" tabs into a single window titled "My Packages".
+
+Note: I want to include data here about tab click-through rates, but am still working on getting access to that data!
 
 ## Explanation
 
@@ -40,28 +40,26 @@ All packages with an update available will have a checkbox next to it, with the 
 
 ## Drawbacks
 
-The current layout with the three tabs provides an inutitive design with a clear, seperate function for each of the tabs (browse packages, view the packages I have installed, update packages). 
+The current layout with the three tabs provides an inutitive design with a clear, seperate function for each of the tabs (browse packages, view the packages I have installed, update packages). Moving away from this concept might cause a disruption to users who have been using our platform for a long time, and are familiar with this current experience. However, based on feedback as well as a movement towards a more modern UI, designing a simpler and more consolidated UI will keep NuGet relevant and ultimately adress many painpoints of the newer developer demographic.
 
 ## Rationale and alternatives
 
+Alternatives to be considered int his design could be the placement of specific elements on the screen, as well as the way in which bulk update capabilities can be transferred to this new UI concept. The current proposed design bubbles updates up to the top, but we could also consider the concept of putting it over to the side of the screen, or doing "nested tabs" where within the "My Packages tab, the user would see two tabs -- one with all installed packages and one just with packages with available updates. However, this "nested tab" alternate design could be slightly counterintuitive, as it would achieve the goal of condensing the highest level of segmentation within the UI (the top level tabs), but would likely not do much for reducing the amount of clicks required between tabs to accomplish the task of updating a package. 
 
-<!-- Why is this the best design compared to other designs? -->
-<!-- What other designs have been considered and why weren't they chosen? -->
-<!-- What is the impact of not doing this? -->
 
 ## Prior Art
 
-<!-- What prior art, both good and bad are related to this proposal? -->
-<!-- Do other features exist in other ecosystems and what experience have their community had? -->
-<!-- What lessons from other communities can we learn from? -->
-<!-- Are there any resources that are relevant to this proposal? -->
+The basis of this design comes from other similar and more modern virtual software marketplace designs we see today such as the Microsoft Store app for Windows. The current experience in the Microsoft Store allows for the user to browse apps of different types (Apps, Games, Entertainment), and then there is one single tab view titled "Library" which displays all of the different apps that a user has installed, and when an update is available in one of these apps, it is bubbled up to the top and the user can install the update. Once the update has completed, the app resturns the the list with the rest of the up to date apps. The end-goal experience for NuGet would be similar to this. 
+
+Below shows a screenshot of how this experience looks when an app on the Microsoft Store has an update available.
+
+![image](https://github.com/albarry4/Home/assets/89422562/f7c5502c-fc7c-4f3f-baa7-88349cb5d884)
+
 
 ## Unresolved Questions
 
-<!-- What parts of the proposal do you expect to resolve before this gets accepted? -->
-<!-- What parts of the proposal need to be resolved before the proposal is stabilized? -->
-<!-- What related issues would you consider out of scope for this proposal but can be addressed in the future? -->
+Still need to analyze tab clickthrough rate data and include in this proposal 
 
 ## Future Possibilities
 
-<!-- What future possibilities can you think of that this proposal would help with? -->
+TBD - continued modernization of the NuGet UI in VS, as well as the creation of a fresh NUget UI for Visual Studio Code 
